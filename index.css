@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  /* width: 100%; */
+  /* position: relative; */
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  align-items: center;
+  justify-content: center;
+}
+
+.glassLogin {
+  border-radius: 2rem;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.258)
+  );
+  z-index: 3;
+  backdrop-filter: blur(1rem);
+  height: 80vh;
+  width: 60%;
+}
+
+.circle1,
+.square {
+  position: absolute;
+  height: 14.8rem;
+  width: 14.8rem;
+  filter: blur(4px);
+  background: linear-gradient(
+    to right top,
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.258)
+  );
+}
+.circle1 {
+  top: 50%;
+  left: 30%;
+  overflow: hidden;
+  animation: circle1 12.5s linear;
+  animation-iteration-count: infinite;
+  border-radius: 50%;
+}
+
+.square {
+  top: 20%;
+  left: 70%;
+  animation: square 14.5s linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes circle1 {
+  0% {
+    transform: rotate(0deg) translate(-20rem) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(-20rem) rotate(-360deg);
+  }
+}
+@keyframes square {
+  0% {
+    transform: rotate(0deg) translate(20rem) rotate(0deg);
+  }
+  50% {
+    border-radius: 50%;
+  }
+
+  100% {
+    transform: rotate(-360deg) translate(20rem) rotate(-360deg);
+    border-radius: 0;
+  }
+}
