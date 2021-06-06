@@ -46,7 +46,7 @@ main {
   top: 50%;
   left: 30%;
   overflow: hidden;
-  animation: circle1 12.5s linear;
+  animation: circle1 20.5s linear;
   animation-iteration-count: infinite;
   border-radius: 50%;
 }
@@ -54,7 +54,7 @@ main {
 .square {
   top: 20%;
   left: 70%;
-  animation: square 14.5s linear;
+  animation: square 20.5s linear;
   animation-iteration-count: infinite;
 }
 
